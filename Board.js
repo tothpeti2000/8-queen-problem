@@ -10,6 +10,7 @@ class Board {
   }
 
   draw_board() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
     //Rows
     for (let i = 0; i < n; i++) {
       //Columns
@@ -28,7 +29,6 @@ class Board {
             this.side,
             this.side
           );
-          ctx.stroke();
         }
       }
     }
